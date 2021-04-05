@@ -1,0 +1,19 @@
+table,thead{
+    border: 1px solid black;
+    border-collapse:collapse;
+    background-color: red;
+}
+
+div{
+    background-color:mediumspringgreen;
+}
+h2{
+    background-color: blue;
+}
+h4{
+    background-color: red;
+}
+
+h3{
+    background-color: blue;
+}
