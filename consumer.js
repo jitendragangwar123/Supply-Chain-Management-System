@@ -1,517 +1,513 @@
 var abi = [
-
-	
-		{
-			"inputs": [
-				{
-					"internalType": "string",
-					"name": "_pname",
-					"type": "string"
-				},
-				{
-					"internalType": "int256",
-					"name": "_price",
-					"type": "int256"
-				},
-				{
-					"internalType": "int256",
-					"name": "_quantity",
-					"type": "int256"
-				}
-			],
-			"name": "addNewProductsInList",
-			"outputs": [],
-			"stateMutability": "nonpayable",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "int256",
-					"name": "_oid",
-					"type": "int256"
-				},
-				{
-					"internalType": "string",
-					"name": "_status",
-					"type": "string"
-				}
-			],
-			"name": "giveOrderItsStatus",
-			"outputs": [],
-			"stateMutability": "nonpayable",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "int256",
-					"name": "_pid",
-					"type": "int256"
-				},
-				{
-					"internalType": "int256",
-					"name": "_newPrice",
-					"type": "int256"
-				}
-			],
-			"name": "newPrice",
-			"outputs": [],
-			"stateMutability": "nonpayable",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "int256",
-					"name": "_pid",
-					"type": "int256"
-				},
-				{
-					"internalType": "int256",
-					"name": "_quantity",
-					"type": "int256"
-				},
-				{
-					"internalType": "string",
-					"name": "_cname",
-					"type": "string"
-				},
-				{
-					"internalType": "string",
-					"name": "_daddress",
-					"type": "string"
-				}
-			],
-			"name": "placeAnOrder",
-			"outputs": [],
-			"stateMutability": "nonpayable",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "string",
-					"name": "_name",
-					"type": "string"
-				}
-			],
-			"name": "registerNewProducer",
-			"outputs": [],
-			"stateMutability": "nonpayable",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "_addr",
-					"type": "address"
-				}
-			],
-			"name": "getMyTotalOrder",
-			"outputs": [
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "_addr",
-					"type": "address"
-				},
-				{
-					"internalType": "int256",
-					"name": "_oid",
-					"type": "int256"
-				}
-			],
-			"name": "getOrderByIdConsumer",
-			"outputs": [
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				},
-				{
-					"internalType": "string",
-					"name": "",
-					"type": "string"
-				},
-				{
-					"internalType": "string",
-					"name": "",
-					"type": "string"
-				},
-				{
-					"internalType": "bool",
-					"name": "",
-					"type": "bool"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "_addr",
-					"type": "address"
-				},
-				{
-					"internalType": "int256",
-					"name": "_oid",
-					"type": "int256"
-				}
-			],
-			"name": "getOrderByIdProducer",
-			"outputs": [
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				},
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				},
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				},
-				{
-					"internalType": "string",
-					"name": "",
-					"type": "string"
-				},
-				{
-					"internalType": "string",
-					"name": "",
-					"type": "string"
-				},
-				{
-					"internalType": "string",
-					"name": "",
-					"type": "string"
-				},
-				{
-					"internalType": "bool",
-					"name": "",
-					"type": "bool"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "_addr",
-					"type": "address"
-				},
-				{
-					"internalType": "int256",
-					"name": "_pid",
-					"type": "int256"
-				}
-			],
-			"name": "getProductbyId",
-			"outputs": [
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				},
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				},
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				},
-				{
-					"internalType": "string",
-					"name": "",
-					"type": "string"
-				},
-				{
-					"internalType": "bool",
-					"name": "",
-					"type": "bool"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "int256",
-					"name": "_pid",
-					"type": "int256"
-				}
-			],
-			"name": "getProductById",
-			"outputs": [
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				},
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				},
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				},
-				{
-					"internalType": "string",
-					"name": "",
-					"type": "string"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "_addr",
-					"type": "address"
-				}
-			],
-			"name": "getTotalOrder",
-			"outputs": [
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [],
-			"name": "getTotalOrder",
-			"outputs": [
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "_addr",
-					"type": "address"
-				}
-			],
-			"name": "getTotalProduct",
-			"outputs": [
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [],
-			"name": "getTotalProduct",
-			"outputs": [
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "_addr",
-					"type": "address"
-				}
-			],
-			"name": "isProducerRegistered",
-			"outputs": [
-				{
-					"internalType": "bool",
-					"name": "",
-					"type": "bool"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				}
-			],
-			"name": "orders",
-			"outputs": [
-				{
-					"internalType": "int256",
-					"name": "id",
-					"type": "int256"
-				},
-				{
-					"internalType": "int256",
-					"name": "product_id",
-					"type": "int256"
-				},
-				{
-					"internalType": "int256",
-					"name": "quantity",
-					"type": "int256"
-				},
-				{
-					"internalType": "string",
-					"name": "customer_name",
-					"type": "string"
-				},
-				{
-					"internalType": "string",
-					"name": "status",
-					"type": "string"
-				},
-				{
-					"internalType": "string",
-					"name": "delivery_address",
-					"type": "string"
-				},
-				{
-					"internalType": "address",
-					"name": "customer_address",
-					"type": "address"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "",
-					"type": "address"
-				}
-			],
-			"name": "producers",
-			"outputs": [
-				{
-					"internalType": "string",
-					"name": "",
-					"type": "string"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				}
-			],
-			"name": "products",
-			"outputs": [
-				{
-					"internalType": "int256",
-					"name": "id",
-					"type": "int256"
-				},
-				{
-					"internalType": "int256",
-					"name": "price",
-					"type": "int256"
-				},
-				{
-					"internalType": "int256",
-					"name": "quantity",
-					"type": "int256"
-				},
-				{
-					"internalType": "string",
-					"name": "product_name",
-					"type": "string"
-				},
-				{
-					"internalType": "address",
-					"name": "producer_address",
-					"type": "address"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [],
-			"name": "totalOrder",
-			"outputs": [
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [],
-			"name": "totalProduct",
-			"outputs": [
-				{
-					"internalType": "int256",
-					"name": "",
-					"type": "int256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		}
-	
-	
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_pname",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_quantity",
+				"type": "uint256"
+			}
+		],
+		"name": "addNewProductsInList",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_oid",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_status",
+				"type": "string"
+			}
+		],
+		"name": "giveOrderItsStatus",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_pid",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_newPrice",
+				"type": "uint256"
+			}
+		],
+		"name": "newPrice",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_pid",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_quantity",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_cname",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_daddress",
+				"type": "string"
+			}
+		],
+		"name": "placeAnOrder",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			}
+		],
+		"name": "registerNewProducer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_addr",
+				"type": "address"
+			}
+		],
+		"name": "getMyTotalOrder",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_addr",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_oid",
+				"type": "uint256"
+			}
+		],
+		"name": "getOrderByIdConsumer",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_addr",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_oid",
+				"type": "uint256"
+			}
+		],
+		"name": "getOrderByIdProducer",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_addr",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_pid",
+				"type": "uint256"
+			}
+		],
+		"name": "getProductbyId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_pid",
+				"type": "uint256"
+			}
+		],
+		"name": "getProductById",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_addr",
+				"type": "address"
+			}
+		],
+		"name": "getTotalOrder",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getTotalOrder",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_addr",
+				"type": "address"
+			}
+		],
+		"name": "getTotalProduct",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getTotalProduct",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_addr",
+				"type": "address"
+			}
+		],
+		"name": "isProducerRegistered",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "orders",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "product_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantity",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "customer_name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "status",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "delivery_address",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "customer_address",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "producers",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "products",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantity",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "product_name",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "producer_address",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "totalOrder",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "totalProduct",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
 ];
 
-var address = "0x4EB8fA580b0b9DA121676a2Ad84BC913a0116739";
+var address = "0xCc10D8a7687051Ec063347555d7EA2Ee5722F26a";
 
 web3 = new Web3(web3.currentProvider);
 var contract = new web3.eth.Contract(abi, address);
